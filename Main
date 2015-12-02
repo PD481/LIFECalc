@@ -2,8 +2,6 @@
 //---Requirement 12: Add multiple classes---
 //---Requirement 20: Encapsulation---
 //---Requirement 18: Polymorphism---
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
