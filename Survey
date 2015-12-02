@@ -1,10 +1,8 @@
 import java.util.Scanner;
 public class Survey {
-
     //---Requirement 14: Create an object---
     Person person1  = new Person();
     public void surveyPerson() {
-
 //---Requirement 21: Add exception handling---------------------------------------------------------------------------------------------
 //---Requirement 26: Println Method---
 //---Requirement 22: Using Java Library Class (using date)---
@@ -21,11 +19,9 @@ public class Survey {
 
         System.out.println("How many packs of cigarettes do you smoke per day? ");
         person1.setPackOfCigaretteSmokePerDay(input.nextInt());
-
         System.out.println("How many years of college have you completed? ");
         person1.setYearOfEducation(input.nextInt());
-
-        System.out.println("Do you have a family history of cancer? ");
+        System.out.println("Do you have a family history of cancer? Enter the number of relatives affected: ");
         double familyHistoryOfBreastCancer = input.nextDouble();
         System.out.println("How many drinks of alcohol do you consume on a weekly basis? ");
         int bottlesOfAlcoholConsumedPerDay = input.nextInt();
@@ -39,11 +35,36 @@ public class Survey {
     }
 
     public void calculateLE();{
-        if (person1.getPackOfCigaretteSmokePerDay()>3) {
+
+        if (person1.getPackOfCigaretteSmokePerDay()>1) {
             person1.setSmoking(-5);
         }
         else if (person1.getPackOfCigaretteSmokePerDay()==0);
             person1.setSmoking(5);
+
+        if (person1.getYearOfEducation()>2);{
+            person1.setEducation(-2);
+        }
+        else if (person1.getYearOfEducation()<2);
+            person1.setEducation(2);
+
+        if (person1.getFamilyHistoryOfCancer()>0){
+            person1.setCancer(-5);
+        }
+        else if (person1.getFamilyHistoryOfCancer()==0);
+            person1.setCancer(3);
+
+        if (person1.getBottlesOfAlcoholConsumedPerDay()>1){
+            person1.setAlcohol(-3);
+        }
+        else if (person1.getBottlesOfAlcoholConsumedPerDay()<=1);
+            person1.setAlcohol(2);
+
+        if (person1.getHoursOfSleepPerDay()<8){
+            person1.setSleep();
+        }
+        else if (person1.getHoursOfSleepPerDay()>=8);
+        person1.setSleep();
     }
 
     public void printLE(){
