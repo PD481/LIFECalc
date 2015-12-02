@@ -42,10 +42,10 @@ public class Survey {
         else if (person1.getPackOfCigaretteSmokePerDay()==0);
             person1.setSmoking(5);
 
-        if (person1.getYearOfEducation()>2);{
+        if (person1.getYearOfEducation()>2) {
             person1.setEducation(-2);
         }
-        else if (person1.getYearOfEducation()<2);
+        else if (person1.getYearOfEducation() < 2) ;
             person1.setEducation(2);
 
         if (person1.getFamilyHistoryOfCancer()>0){
