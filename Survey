@@ -27,11 +27,13 @@ public class Survey {
         int bottlesOfAlcoholConsumedPerDay = input.nextInt();
         System.out.println("How many hours do you sleep per night?");
         int hoursOfSleepPerDay = input.nextInt();
+        
         System.out.println("Enter your name: ");
         //---Requirement 6: String Class Method---
-        String name = input.nextLine();
+        String name = input.next();
         System.out.println(name.toUpperCase());
         System.out.println("     ");
+        System.out.println(name);
     }
 
     public void calculateLE();{
